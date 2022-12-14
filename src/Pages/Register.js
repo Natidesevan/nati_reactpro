@@ -1,5 +1,5 @@
 import React,{ useState} from 'react';
-import { Container, Row, Col, Button, Form, Spinner, InputGroup} from 'react-bootstrap';
+import { Container, Row, Col, Button, Form, Spinner, InputGroup} from 'react-bootstrap';/* eslint-disable-line */
 import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/high-res.css';
@@ -54,7 +54,7 @@ const Register = () => {
                         <Form.Group className="mb-3">
                             <Form.Label>Mobile number</Form.Label>
                             <PhoneInput
-                                country={'in'}
+                                country={'us'}
                                 value={number}
                                 onChange={phone=> setNumber(phone)}
                                 className="text-dark"

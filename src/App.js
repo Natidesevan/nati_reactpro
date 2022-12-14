@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,7 +18,7 @@ import MyAccount from "./Pages/MyAccount";
 function App() {
   const [theme] = useThemeHook();
   return (
-    <main className={theme? 'bg-black': 'bg-light-2'} style={{ height: '100vh', overflowY: 'auto'}}>
+    <main className={theme? 'bg-yellow': 'bg-light-2'} style={{ height: '100vh', overflowY: 'auto'}}>
       <Header/>
       <Router>
         <Home path="/" />

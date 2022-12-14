@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button} from 'react-bootstrap';
 import { useThemeHook } from '../GlobalComponents/ThemeProvider';
@@ -24,7 +25,7 @@ const ProductDetails = (props) => {
     return (
         <Container className="py-5">
             <Row className="justify-content-center mt-5">
-                <Col xs={10} md={7} lg={5} className="p-0">
+                <Col xs={10} md={7} lg={5} className="p-0">   
                   <Lightbox
                         images={[
                             {

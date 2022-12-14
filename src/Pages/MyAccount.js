@@ -1,13 +1,14 @@
 import React from 'react';
-import { Container, Row, Col, Tab, Nav, Image, Form, Button, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Tab, Nav, Image, Form, Button, Badge } from 'react-bootstrap';/* eslint-disable-line */
 import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 import Heading from  '../components/Heading';
-import profilePix from '../images/profile-picture.png';
+import profilePix from '../components/images/Profile-picture.jpg';
 import { FaClipboardList, FaUser } from 'react-icons/fa';
 import { GiWallet} from 'react-icons/gi';
 import { IoLocationSharp } from 'react-icons/io5';
 import './my-account.css';
 import OrderCard from '../components/OrderCard';
+
 
 
 const MyAccount = () => {
@@ -30,7 +31,7 @@ const MyAccount = () => {
                            </Col> 
                            <Col xs={9} className="pt-1">
                                 <span>Hello,</span>
-                                <h4>Code With yd</h4>
+                                <h4>Code With Natnael</h4>
                            </Col>
                         </Row>
                         <Nav variant="pills" className="flex-column">
@@ -59,18 +60,18 @@ const MyAccount = () => {
                             <Tab.Pane eventKey="my-orders">
                                 <Heading heading="My Orders" size="h3" />
                                 <OrderCard 
-                                    orderDate="24 Jun, 2022" 
+                                    orderDate="09 Dec, 2022" 
                                     orderId="1234" 
                                     title="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
                                     img="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
-                                    deliveredDate="05 July, 2022"
+                                    deliveredDate="12 December, 2022"
                                 />
                                 <OrderCard 
-                                    orderDate="24 Jun, 2022" 
+                                    orderDate="09 Dec, 2022" 
                                     orderId="1334" 
                                     title="Mens Casual Premium Slim Fit T-Shirts"
                                     img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-                                    deliveredDate="05 July, 2022"
+                                    deliveredDate="12 December, 2022"
                                 />
                             </Tab.Pane>
                             <Tab.Pane eventKey="account-details">
